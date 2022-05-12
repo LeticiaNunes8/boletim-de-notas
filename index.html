@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head lang='pt-br'>
+        <meta charset='UTF-8'>
+        <link rel='stylesheet' href='index.css'>
+        <script type='text/javascript' src='index.js'></script>
+    </head>
+
+    <body>
+        <div id='formAlunos'>
+            <form>
+                <fieldset><h3>Cadastro de Notas</h3>
+                    <label>Nome</label><br><input type='text' name='txtNome' /> <br><br>
+                    <label>Nota do 1º semestre</label><br><input type='number' min= 0 max=10 name='numberNota1'  /> <br><br>
+                    <label>Nota do 2º semestre</label><br><input type='number' min= 0 max=10 name='numberNota2' /> <br><br>
+                    <label>Frequência</label><br><input type='text' name='txtFrequencia' /> <br><br>
+                    <input type='button' value='Cadastrar Nota' class='botao' onclick='cadBoletim(txtNome.value, numberNota1.value, numberNota2.value, txtFrequencia.value)' />
+                </fieldset>
+            </form>
+        </div>
+
+        <br><br>
+        <h1>Boletim</h1>
+        <div id='divTabela'>
+            <table id='tbAlunos'>
+                <thead>
+                    <tr>
+                        <td>Código</td>
+                        <td>Nome</td>
+                        <td>1º Semestre</td>
+                        <td>2º Semestre</td>
+                        <td>Nota Final</td>
+                        <td>Frequência</td>
+                    </tr>   
+                </thead>
+            </table>        
+        </div>
+    </body>
+</html>
